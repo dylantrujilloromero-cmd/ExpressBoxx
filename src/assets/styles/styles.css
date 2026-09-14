@@ -7,7 +7,7 @@
     --gris-borde: #dfe6e9;
     --gris-oscuro: #2f3640;
     --texto-principal: #1e272e;
-    --texto-secundario: #57606f;
+    --texto-secundario: #b4b8c0;
     --fuente-titulos: "Playfair Display", serif;
     --fuente-texto: "Inter", sans-serif;
 }
@@ -160,7 +160,7 @@ a:hover {
 }
 
 .producto-destacado-card {
-    background-color: transparent;
+    background-color: #aa3232;
     border: none;
     text-align: center;
     cursor: pointer;

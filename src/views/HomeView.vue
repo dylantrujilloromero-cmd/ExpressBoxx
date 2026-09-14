@@ -19,21 +19,21 @@
         <div class="row g-4">
           <div class="col-md-4 col-sm-6">
             <div class="producto-destacado-card">
-              <img src="https://via.placeholder.com/250x200?text=Caja+Premium" :alt="`Caja Premium`" class="img-fluid">
+              <img src="/img/caja_de_almacenamiento.jpg" :alt="`Caja Premium`" class="img-fluid">
               <p class="text-white fw-bold mb-2">Caja Premium</p>
               <p class="text-muted small">Desde $50.00</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="producto-destacado-card">
-              <img src="https://via.placeholder.com/250x200?text=Caja+Estándar" :alt="`Caja Estándar`" class="img-fluid">
+              <img src="/img/caja_feliz_cumple.jpg" :alt="`Caja Estándar`" class="img-fluid">
               <p class="text-white fw-bold mb-2">Caja Estándar</p>
               <p class="text-muted small">Desde $30.00</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="producto-destacado-card">
-              <img src="https://via.placeholder.com/250x200?text=Caja+Económica" :alt="`Caja Económica`" class="img-fluid">
+              <img src="/img/cajas_para_zapatos.jpg" :alt="`Caja Económica`" class="img-fluid">
               <p class="text-white fw-bold mb-2">Caja Económica</p>
               <p class="text-muted small">Desde $15.00</p>
             </div>
