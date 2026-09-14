@@ -4,7 +4,7 @@
       <div class="card p-5 border shadow-lg mx-auto bg-white rounded-4" style="max-width: 720px;">
         <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
           <div>
-            <h1 class="h4 fw-bold text-success mb-0">PUNTO CAJAS</h1>
+            <h1 class="h4 fw-bold text-success mb-0">ExpressBoxx</h1>
             <small class="text-secondary">Comprobante de Venta Electrónico</small>
           </div>
           <div class="text-end">
@@ -49,7 +49,7 @@
         </table>
 
         <div class="alert alert-light text-center small text-secondary mb-4">
-          Gracias por tu compra en Punto Cajas. Guarda este comprobante para cualquier reclamo.
+          Gracias por tu compra en ExpressBoxx. Guarda este comprobante para cualquier reclamo.
         </div>
 
         <div class="text-center">

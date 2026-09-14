@@ -7,7 +7,7 @@
           <path d="M3 7v10l9 4 9-4V7"/>
           <path d="M12 11v10"/>
         </svg>
-        Punto Cajas
+        ExpressBoxx
       </router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">

@@ -1,34 +1,41 @@
 <template>
   <main>
     <section class="hero-punto">
-      <div class="container">
+      <div class="container position-relative z-1">
         <div class="row align-items-center">
-          <div class="col-md-7">
-            <template v-if="authStore.isAuthenticated">
-              <h1 class="display-6 fw-bold">Bienvenido a Punto Cajas, {{ authStore.profile?.nombre }}</h1>
-              <p class="lema fs-5">"Donde cada caja encaja contigo."</p>
-              <p class="text-secondary">En Punto Cajas puedes solicitar cotizaciones según las medidas, color y acabado que necesites, realizar compras, reservar actividades y recibir atención cuando la necesites.</p>
-              <div class="d-flex gap-3 mt-4 flex-wrap">
-                <router-link to="/cotizar" class="btn btn-punto-primario btn-lg px-4">Cotizar ahora</router-link>
-                <router-link to="/catalogo" class="btn btn-punto-secundario btn-lg px-4">Ver catálogo</router-link>
-                <router-link to="/reservas" class="btn btn-punto-primario btn-lg px-4">Reservas</router-link>
-              </div>
-            </template>
-            <template v-else>
-              <h1 class="display-6 fw-bold">Bienvenido a Punto Cajas</h1>
-              <p class="lema fs-5">"Donde cada caja encaja contigo."</p>
-              <p class="text-secondary">En Punto Cajas puedes consultar nuestro catálogo y solicitar una cotización según las medidas, color y acabado que necesites.</p>
-              <div class="d-flex gap-3 mt-4 flex-wrap">
-                <router-link to="/catalogo" class="btn btn-punto-primario btn-lg px-4">Ver catálogo</router-link>
-                <router-link to="/login" class="btn btn-punto-secundario btn-lg px-4">Iniciar sesión</router-link>
-                <router-link to="/registro" class="btn btn-punto-secundario btn-lg px-4">Registrarse</router-link>
-              </div>
-            </template>
+          <div class="col-lg-6">
+            <p class="lema mb-2">CATEGORÍAS DESTACADAS</p>
+            <h1 class="mb-3">Cajas Personalizadas</h1>
+            <p class="fs-5 mb-4">Diseña tus cajas con las medidas exactas, colores y acabados que necesites. Encuentra la solución perfecta para tus necesidades de empaque.</p>
+            <router-link to="/catalogo" class="btn btn-punto-primario btn-lg px-5">IR AL CATÁLOGO</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="franja-cajas">
-              <span class="caja-decorativa"></span>
-              <span class="caja-decorativa"></span>
-              <span class="caja-decorativa"></span>
+    <section class="seccion-destacados">
+      <div class="container">
+        <h2>Artículos Destacados</h2>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="producto-destacado-card">
+              <img src="https://via.placeholder.com/250x200?text=Caja+Premium" :alt="`Caja Premium`" class="img-fluid">
+              <p class="text-white fw-bold mb-2">Caja Premium</p>
+              <p class="text-muted small">Desde $50.00</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="producto-destacado-card">
+              <img src="https://via.placeholder.com/250x200?text=Caja+Estándar" :alt="`Caja Estándar`" class="img-fluid">
+              <p class="text-white fw-bold mb-2">Caja Estándar</p>
+              <p class="text-muted small">Desde $30.00</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="producto-destacado-card">
+              <img src="https://via.placeholder.com/250x200?text=Caja+Económica" :alt="`Caja Económica`" class="img-fluid">
+              <p class="text-white fw-bold mb-2">Caja Económica</p>
+              <p class="text-muted small">Desde $15.00</p>
             </div>
           </div>
         </div>
@@ -37,7 +44,7 @@
 
     <section class="seccion-gris">
       <div class="container">
-        <h2 class="text-center mb-5">¿Qué puedes hacer en Punto Cajas?</h2>
+        <h2 class="text-center mb-5">¿Qué puedes hacer en ExpressBoxx?</h2>
         <div class="row g-4">
           <div class="col-md-3 col-sm-6">
             <div class="tarjeta-servicio">

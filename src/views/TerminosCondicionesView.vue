@@ -8,7 +8,7 @@
         <hr class="my-4">
 
         <h5>1. Objeto</h5>
-        <p class="text-secondary">El presente documento regula el acceso y uso de los servicios de cotización, compra de cajas y reserva de actividades ofrecidos por Punto Cajas.</p>
+        <p class="text-secondary">El presente documento regula el acceso y uso de los servicios de cotización, compra de cajas y reserva de actividades ofrecidos por ExpressBoxx.</p>
 
         <h5>2. Cotizaciones y Pedidos</h5>
         <p class="text-secondary">Las cotizaciones emitidas tienen una validez de 15 días calendario. La disponibilidad de inventario se confirma al momento de generar la factura.</p>

@@ -8,7 +8,7 @@
         <hr class="my-4">
 
         <h5>1. Responsable del Tratamiento</h5>
-        <p class="text-secondary">Punto Cajas es responsable del tratamiento de los datos personales recolectados a través de esta plataforma digital.</p>
+        <p class="text-secondary">ExpressBoxx es responsable del tratamiento de los datos personales recolectados a través de esta plataforma digital.</p>
 
         <h5>2. Finalidad del Tratamiento</h5>
         <p class="text-secondary">Los datos serán utilizados para procesar cotizaciones, pedidos de compra, gestión de reservas de actividades físicas y comunicación de soporte al cliente.</p>
