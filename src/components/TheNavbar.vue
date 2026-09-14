@@ -2,11 +2,7 @@
   <nav class="navbar navbar-expand-md navbar-punto py-3">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <svg class="logo-caja" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-          <path d="M3 7l9-4 9 4-9 4-9-4z"/>
-          <path d="M3 7v10l9 4 9-4V7"/>
-          <path d="M12 11v10"/>
-        </svg>
+        <img class="logo-caja" :src="LogoImage" alt="ExpressBoxx"/>
         ExpressBoxx
       </router-link>
 
@@ -81,6 +77,7 @@
 import { useAuthStore } from '../stores/authStore';
 import { useCarritoStore } from '../stores/carritoStore';
 import { useRouter } from 'vue-router';
+import LogoImage from '../../img/logo.png';
 
 const authStore = useAuthStore();
 const carritoStore = useCarritoStore();
