@@ -1,0 +1,282 @@
+:root {
+    --verde-principal: #2f7a4d;
+    --verde-oscuro: #1f5936;
+    --verde-claro: #e7f4ec;
+    --blanco: #ffffff;
+    --gris-claro: #f4f6f5;
+    --gris-borde: #dde3e0;
+    --texto-principal: #24312b;
+    --texto-secundario: #5b6b63;
+    --fuente-titulos: "Poppins", sans-serif;
+    --fuente-texto: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    color: var(--texto-principal);
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+}
+
+a {
+    color: var(--verde-principal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--verde-oscuro);
+}
+
+.navbar-punto {
+    background-color: var(--blanco);
+    border-bottom: 3px solid var(--verde-principal);
+}
+
+.navbar-punto .navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--verde-oscuro);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-punto .nav-link {
+    color: var(--texto-principal);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-punto .nav-link:hover,
+.navbar-punto .nav-link.router-link-active,
+.navbar-punto .nav-link.active {
+    color: var(--verde-principal);
+}
+
+.logo-caja {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.btn-punto-primario {
+    background-color: var(--verde-principal);
+    border-color: var(--verde-principal);
+    color: var(--blanco);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-punto-primario:hover {
+    background-color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+.btn-punto-secundario {
+    background-color: transparent;
+    border: 2px solid var(--verde-principal);
+    color: var(--verde-principal);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-punto-secundario:hover {
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+}
+
+.hero-punto {
+    background-color: var(--verde-claro);
+    border-bottom: 1px solid var(--gris-borde);
+    padding: 64px 0;
+}
+
+.hero-punto .lema {
+    color: var(--verde-oscuro);
+    font-style: italic;
+}
+
+.franja-cajas {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.caja-decorativa {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--verde-principal);
+    border-radius: 4px;
+    opacity: 0.35;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.caja-decorativa:nth-child(2) {
+    opacity: 0.6;
+    transform: translateY(-6px);
+}
+
+.caja-decorativa:nth-child(3) {
+    opacity: 1;
+}
+
+.seccion-gris {
+    background-color: var(--gris-claro);
+    padding: 56px 0;
+    min-height: calc(100vh - 220px);
+}
+
+.tarjeta-servicio {
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    padding: 24px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.tarjeta-servicio .icono-servicio {
+    color: var(--verde-principal);
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.contenedor-formulario {
+    max-width: 520px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 32px;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.contenedor-formulario.formulario-ancho {
+    max-width: 720px;
+}
+
+.contenedor-formulario h1 {
+    font-size: 1.6rem;
+    color: var(--verde-oscuro);
+    margin-bottom: 4px;
+}
+
+.contenedor-formulario .subtitulo {
+    color: var(--texto-secundario);
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 0.2rem rgba(47, 122, 77, 0.25);
+}
+
+.footer-punto {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 24px 0;
+    margin-top: auto;
+}
+
+.footer-punto a {
+    color: var(--blanco) !important;
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+.footer-punto a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* CRUD & RESERVAS ESTILOS */
+.table-scroll {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crud-table th, .crud-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--gris-borde);
+    text-align: left;
+}
+
+.crud-table th {
+    background-color: #2f7a4d;
+    color: white;
+    font-weight: 600;
+}
+
+.crud-table tr:hover {
+    background-color: #f9fbf9;
+}
+
+.row-actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-actions button {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    border: 1px solid #2f7a4d;
+    background: white;
+    color: #2f7a4d;
+    cursor: pointer;
+}
+
+.row-actions button:hover {
+    background: #2f7a4d;
+    color: white;
+}
